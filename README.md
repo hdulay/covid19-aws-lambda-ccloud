@@ -18,7 +18,7 @@ Config
 ```
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 
 # usage python3 covid-producer.py topic myconfig.json
 python3 covid-producer.py covid19 aws.json
