@@ -1,0 +1,14 @@
+{
+    "ID": "b04fa8bc-9427-48b1-b846-cfeb03fe4940",
+    "Country": "Yemen",
+    "CountryCode": "YE",
+    "Slug": "yemen",
+    "NewConfirmed": 0,
+    "TotalConfirmed": 2118,
+    "NewDeaths": 0,
+    "TotalDeaths": 615,
+    "NewRecovered": 0,
+    "TotalRecovered": 1424,
+    "Date": "2021-01-26T06:07:38.502Z",
+    "Premium": {}
+}

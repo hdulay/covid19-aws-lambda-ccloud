@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "covid",
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "string"
+      },
+      "Country": {
+        "type": "string"
+      },
+      "CountryCode": {
+        "type": "string"
+      },
+      "Slug": {
+        "type": "string"
+      },
+      "NewConfirmed": {
+        "type": "integer"
+      },
+      "TotalConfirmed": {
+        "type": "integer"
+      },
+      "NewDeaths": {
+        "type": "integer"
+      },
+      "TotalDeaths": {
+        "type": "integer"
+      },
+      "NewRecovered": {
+        "type": "integer"
+      },
+      "TotalRecovered": {
+        "type": "integer"
+      },
+      "Date": {
+        "type": "string"
+      },
+      "Premium": {
+        "type": "object"
+      }
+    },
+    "required": [
+      "ID",
+      "Country",
+      "CountryCode",
+      "Slug",
+      "NewConfirmed",
+      "TotalConfirmed",
+      "NewDeaths",
+      "TotalDeaths",
+      "NewRecovered",
+      "TotalRecovered",
+      "Date",
+      "Premium"
+    ]
+  }
