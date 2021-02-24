@@ -35,8 +35,8 @@ def send(p, js, topic):
     p.flush()
 
 def poll(url, topic, p):
-    response = requests.get(url)
     try:
+        response = requests.get(url)
         results = json.loads(response.text)
         for j in results['Countries']:
             print(j)
@@ -44,6 +44,9 @@ def poll(url, topic, p):
     except:
         print("Unexpected error:", sys.exc_info()[0])
         traceback.print_exc()
+        j = json.loads('{"ID": "bba9f8d7-baaf-4200-857f-cd8b2e196cf4", "Country": "COVID service is down", "CountryCode": "US", "Slug": "saint-kitts-and-nevis", "NewConfirmed": 0, "TotalConfirmed": 41, "NewDeaths": 0, "TotalDeaths": 0, "NewRecovered": 0, "TotalRecovered": 39, "Date": "2021-02-24T13:59:39.496Z", "Premium": {}}')
+        send(p, j, topic)
+
 
 def main():
     config_file = sys.argv[2]
